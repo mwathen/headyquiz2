@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "df30aa10fc318390794f518ee8fd656f"
+build_time: [538621327, 797016000]
+inputs:
+  "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/HeadyQuiz2/ViewController.swift": [538621317, 0]
+  "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/HeadyQuiz2/AppDelegate.swift": [538621317, 0]

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Records</key>
+	<dict>
+		<key>Record 1</key>
+		<dict>
+			<key>Answer 1</key>
+			<string>Nick Mason</string>
+			<key>Answer 2</key>
+			<string>Syd Barrett</string>
+			<key>Answer 3</key>
+			<string>Roger Waters</string>
+			<key>Answer 4</key>
+			<string>David Gilmour</string>
+            <key>Correct Answer</key>
+            <integer>2</integer>
+			<key>Question</key>
+			<string>Which former member of Pink Floyd made an impromptu visit to the studio during the recording of &apos;Wish you were Here&apos;?</string>
+		</dict>
+		<key>Record 2</key>
+		<dict>
+			<key>Answer 1</key>
+			<string>Jefferson Airplane</string>
+			<key>Answer 2</key>
+			<string>Canned Heat</string>
+            <key>Answer 3</key>
+            <string>Big Brother and the Holding Company</string>
+            <key>Answer 4</key>
+            <string>The Mamas and the Papas</string>
+            <key>Correct Answer</key>
+            <integer>3</integer>
+			<key>Question</key>
+			<string>What was the name of the band Janis Joplin started out with?</string>
+		</dict>
+		<key>Record 3</key>
+		<dict>
+			<key>Answer 1</key>
+			<string>Herbie Hancock</string>
+			<key>Answer 2</key>
+			<string>Miles Davis</string>
+            <key>Answer 3</key>
+            <string>Wayne Shorter</string>
+            <key>Answer 4</key>
+            <string>John Scofield</string>
+            <key>Correct Answer</key>
+            <integer>1</integer>
+			<key>Question</key>
+			<string>What famous jazz musician made a huge 80&apos;s comeback with &apos;Rockit&apos;?</string>
+		</dict>
+		<key>Record 4</key>
+		<dict>
+			<key>Answer 1</key>
+			<string>Atlanta</string>
+			<key>Answer 2</key>
+			<string>New Orleans</string>
+            <key>Answer 3</key>
+            <string>Los Angeles</string>
+            <key>Answer 4</key>
+            <string>Buffalo</string>
+            <key>Correct Answer</key>
+            <integer>4</integer>
+			<key>Question</key>
+			<string>What city were the Dead &apos;busted&apos; in that is infamously referenced in Truckin?</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA4394401E3EE138007473B0 /* HeadyQuiz2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA43943E1E3EE138007473B0 /* HeadyQuiz2.xcdatamodeld */; };
+		BA4394421E3EE5B4007473B0 /* Records.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA4394411E3EE5B4007473B0 /* Records.plist */; };
 		BA6528DD1E38308500133A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6528DC1E38308500133A3D /* AppDelegate.swift */; };
 		BA6528DF1E38308500133A3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6528DE1E38308500133A3D /* ViewController.swift */; };
 		BA6528E21E38308500133A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E01E38308500133A3D /* Main.storyboard */; };
-		BA6528E51E38308500133A3D /* HeadyQuiz2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA6528E31E38308500133A3D /* HeadyQuiz2.xcdatamodeld */; };
 		BA6528E71E38308500133A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E61E38308500133A3D /* Assets.xcassets */; };
 		BA6528EA1E38308500133A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E81E38308500133A3D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA43943F1E3EE138007473B0 /* HeadyQuiz2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeadyQuiz2.xcdatamodel; sourceTree = "<group>"; };
+		BA4394411E3EE5B4007473B0 /* Records.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Records.plist; sourceTree = "<group>"; };
 		BA6528D91E38308500133A3D /* HeadyQuiz2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadyQuiz2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6528DC1E38308500133A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6528DE1E38308500133A3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA6528E11E38308500133A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA6528E41E38308500133A3D /* HeadyQuiz2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeadyQuiz2.xcdatamodel; sourceTree = "<group>"; };
 		BA6528E61E38308500133A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6528E91E38308500133A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6528EB1E38308500133A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,8 +63,9 @@
 				BA6528E01E38308500133A3D /* Main.storyboard */,
 				BA6528E61E38308500133A3D /* Assets.xcassets */,
 				BA6528E81E38308500133A3D /* LaunchScreen.storyboard */,
+				BA43943E1E3EE138007473B0 /* HeadyQuiz2.xcdatamodeld */,
 				BA6528EB1E38308500133A3D /* Info.plist */,
-				BA6528E31E38308500133A3D /* HeadyQuiz2.xcdatamodeld */,
+				BA4394411E3EE5B4007473B0 /* Records.plist */,
 			);
 			path = HeadyQuiz2;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6528EA1E38308500133A3D /* LaunchScreen.storyboard in Resources */,
+				BA4394421E3EE5B4007473B0 /* Records.plist in Resources */,
 				BA6528E71E38308500133A3D /* Assets.xcassets in Resources */,
 				BA6528E21E38308500133A3D /* Main.storyboard in Resources */,
 			);
@@ -140,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6528E51E38308500133A3D /* HeadyQuiz2.xcdatamodeld in Sources */,
+				BA4394401E3EE138007473B0 /* HeadyQuiz2.xcdatamodeld in Sources */,
 				BA6528DF1E38308500133A3D /* ViewController.swift in Sources */,
 				BA6528DD1E38308500133A3D /* AppDelegate.swift in Sources */,
 			);
@@ -306,16 +310,17 @@
 				BA6528F01E38308500133A3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BA6528E31E38308500133A3D /* HeadyQuiz2.xcdatamodeld */ = {
+		BA43943E1E3EE138007473B0 /* HeadyQuiz2.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BA6528E41E38308500133A3D /* HeadyQuiz2.xcdatamodel */,
+				BA43943F1E3EE138007473B0 /* HeadyQuiz2.xcdatamodel */,
 			);
-			currentVersion = BA6528E41E38308500133A3D /* HeadyQuiz2.xcdatamodel */;
+			currentVersion = BA43943F1E3EE138007473B0 /* HeadyQuiz2.xcdatamodel */;
 			path = HeadyQuiz2.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
