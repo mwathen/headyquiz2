@@ -13,15 +13,15 @@ provides-member:
 provides-dynamic-lookup:
 - "correctanswer"
 - "answer2"
-- "answer4"
-- "answer1"
-- "question"
 - "answer3"
+- "answer1"
+- "answer4"
+- "question"
 depends-top-level:
 - "NSFetchRequest"
-- "Records"
-- !private "StringLiteralType"
 - "String"
+- !private "StringLiteralType"
+- "Records"
 depends-member:
 - !private ["Ps9AnyObject", "NSFetchRequest"]
 - ["Ps9AnyObject", "answer1"]
