@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C10HeadyQuiz211AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillTerminate"
-- "window"
-- "persistentContainer"
 - "applicationDidBecomeActive"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "persistentContainer"
 - "application"
 - "applicationDidEnterBackground"
 - "saveContext"
+- "window"
 - "applicationWillEnterForeground"
-- "applicationWillResignActive"
 depends-top-level:
-- !private "StringLiteralType"
 - "NSPersistentContainer"
-- "UIApplicationDelegate"
-- "UIApplication"
-- !private "NSError"
+- "AppDelegate"
 - !private "BooleanLiteralType"
 - !private "fatalError"
-- "Bool"
-- "UIResponder"
-- "UIWindow"
-- "CastingPrecedence"
 - "UIApplicationLaunchOptionsKey"
-- "AppDelegate"
+- !private "StringLiteralType"
+- "Bool"
+- "CastingPrecedence"
+- "UIApplicationDelegate"
+- "UIWindow"
+- "UIResponder"
+- !private "NSError"
+- "UIApplication"
 depends-member:
 - !private ["Ps9AnyObject", "NSPersistentContainer"]
 - ["Ps9AnyObject", "application"]

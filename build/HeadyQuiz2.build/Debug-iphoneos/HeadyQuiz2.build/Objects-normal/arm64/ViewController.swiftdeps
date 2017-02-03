@@ -9,52 +9,53 @@ provides-member:
 - ["V10HeadyQuiz28Question", ""]
 - ["C10HeadyQuiz214ViewController", ""]
 provides-dynamic-lookup:
-- "answer2value"
-- "QNumber"
-- "Buttons"
-- "Button4Action"
-- "didReceiveMemoryWarning"
-- "RandomQuestions"
-- "CorrectAnswer"
-- "questionvalue"
-- "viewDidLoad"
 - "answer3value"
-- "QNumber2"
-- "JSONQuestion"
-- "Button2Action"
+- "RandomQuestions"
 - "QuestionLabel"
+- "QNumber2"
+- "questionvalue"
 - "correctanswer_real"
-- "answer1value"
-- "Button1Action"
-- "Button3Action"
+- "QNumber"
+- "CorrectAnswer"
+- "answer2value"
+- "Buttons"
+- "PickQuestion"
 - "AnswerLabel"
 - "AnswerNumber"
 - "xx"
-- "PickQuestion"
+- "didReceiveMemoryWarning"
 - "answer4value"
+- "Button4Action"
+- "answer1value"
+- "Button1Action"
+- "viewDidLoad"
+- "Button2Action"
+- "JSONQuestion"
+- "Button3Action"
 depends-top-level:
-- !private "..<"
+- "UIViewController"
+- "CastingPrecedence"
 - !private "NSDictionary"
-- "Int"
-- "Question"
+- !private "print"
 - !private "Bundle"
-- !private ">"
 - "UIButton"
 - "AssignmentPrecedence"
 - !private "=="
-- "CastingPrecedence"
-- !private "Array"
-- !private "print"
-- !private "+="
-- !private "UIControlState"
-- !private "NSLog"
-- "UILabel"
-- !private "StringLiteralType"
-- "UIViewController"
-- !private "arc4random"
-- "String"
-- !private "%"
 - "ViewController"
+- "String"
+- !private "UInt32"
+- !private "NSLog"
+- "Int"
+- !private "Array"
+- !private "..<"
+- !private "arc4random"
+- !private "UIControlState"
+- !private "%"
+- !private "StringLiteralType"
+- !private ">"
+- !private "+="
+- "UILabel"
+- "Question"
 depends-member:
 - ["Ps9AnyObject", "AnswerLabel"]
 - ["Ps9AnyObject", "AnswerNumber"]
@@ -78,6 +79,7 @@ depends-member:
 - ["Ps9AnyObject", "RandomQuestions"]
 - ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIControlState"]
+- !private ["Ps9AnyObject", "UInt32"]
 - ["Ps9AnyObject", "answer1value"]
 - ["Ps9AnyObject", "answer2value"]
 - ["Ps9AnyObject", "answer3value"]
@@ -178,6 +180,7 @@ depends-member:
 - ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIControlState"]
+- !private ["Ps7CVarArg", "UInt32"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - ["Ps7CVarArg", "answer1value"]
@@ -248,6 +251,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIControlState"]
+- !private ["Ps28CustomDebugStringConvertible", "UInt32"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "answer1value"]
 - ["Ps28CustomDebugStringConvertible", "answer2value"]
@@ -321,6 +325,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIControlState"]
+- !private ["Ps23CustomStringConvertible", "UInt32"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -384,6 +389,7 @@ depends-member:
 - !private ["Ps9Equatable", "Stride"]
 - ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIControlState"]
+- !private ["Ps9Equatable", "UInt32"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -454,6 +460,7 @@ depends-member:
 - !private ["Ps8Hashable", "Stride"]
 - ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIControlState"]
+- !private ["Ps8Hashable", "UInt32"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "answer1value"]
@@ -565,6 +572,7 @@ depends-member:
 - ["PSo8NSCoding", "RandomQuestions"]
 - ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIControlState"]
+- !private ["PSo8NSCoding", "UInt32"]
 - ["PSo8NSCoding", "answer1value"]
 - ["PSo8NSCoding", "answer2value"]
 - ["PSo8NSCoding", "answer3value"]
@@ -608,6 +616,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "RandomQuestions"]
 - ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
+- !private ["PSo26NSExtensionRequestHandling", "UInt32"]
 - ["PSo26NSExtensionRequestHandling", "answer1value"]
 - ["PSo26NSExtensionRequestHandling", "answer2value"]
 - ["PSo26NSExtensionRequestHandling", "answer3value"]
@@ -651,6 +660,7 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIControlState"]
 - ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UInt32"]
 - ["CSo8NSObject", "answer1value"]
 - ["CSo8NSObject", "answer2value"]
 - ["CSo8NSObject", "answer3value"]
@@ -690,6 +700,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "RandomQuestions"]
 - ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIControlState"]
+- !private ["PSo16NSObjectProtocol", "UInt32"]
 - ["PSo16NSObjectProtocol", "answer1value"]
 - ["PSo16NSObjectProtocol", "answer2value"]
 - ["PSo16NSObjectProtocol", "answer3value"]
@@ -835,6 +846,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "RandomQuestions"]
 - ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIControlState"]
+- !private ["PSo21UIAppearanceContainer", "UInt32"]
 - ["PSo21UIAppearanceContainer", "answer1value"]
 - ["PSo21UIAppearanceContainer", "answer2value"]
 - ["PSo21UIAppearanceContainer", "answer3value"]
@@ -873,6 +885,7 @@ depends-member:
 - ["PSo18UIContentContainer", "RandomQuestions"]
 - ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIControlState"]
+- !private ["PSo18UIContentContainer", "UInt32"]
 - ["PSo18UIContentContainer", "answer1value"]
 - ["PSo18UIContentContainer", "answer2value"]
 - ["PSo18UIContentContainer", "answer3value"]
@@ -916,6 +929,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "RandomQuestions"]
 - ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIControlState"]
+- !private ["PSo18UIFocusEnvironment", "UInt32"]
 - ["PSo18UIFocusEnvironment", "answer1value"]
 - ["PSo18UIFocusEnvironment", "answer2value"]
 - ["PSo18UIFocusEnvironment", "answer3value"]
@@ -958,6 +972,7 @@ depends-member:
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIControlState"]
 - ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UInt32"]
 - ["CSo11UIResponder", "answer1value"]
 - ["CSo11UIResponder", "answer2value"]
 - ["CSo11UIResponder", "answer3value"]
@@ -994,6 +1009,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "RandomQuestions"]
 - ["PSo30UIResponderStandardEditActions", "String"]
 - !private ["PSo30UIResponderStandardEditActions", "UIControlState"]
+- !private ["PSo30UIResponderStandardEditActions", "UInt32"]
 - ["PSo30UIResponderStandardEditActions", "answer1value"]
 - ["PSo30UIResponderStandardEditActions", "answer2value"]
 - ["PSo30UIResponderStandardEditActions", "answer3value"]
@@ -1031,6 +1047,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "RandomQuestions"]
 - ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIControlState"]
+- !private ["PSo16UIStateRestoring", "UInt32"]
 - ["PSo16UIStateRestoring", "answer1value"]
 - ["PSo16UIStateRestoring", "answer2value"]
 - ["PSo16UIStateRestoring", "answer3value"]
@@ -1066,6 +1083,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "RandomQuestions"]
 - ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIControlState"]
+- !private ["PSo18UITraitEnvironment", "UInt32"]
 - ["PSo18UITraitEnvironment", "answer1value"]
 - ["PSo18UITraitEnvironment", "answer2value"]
 - ["PSo18UITraitEnvironment", "answer3value"]
@@ -1107,6 +1125,7 @@ depends-member:
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIControlState"]
 - ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "UInt32"]
 - ["CSo16UIViewController", "answer1value"]
 - ["CSo16UIViewController", "answer2value"]
 - ["CSo16UIViewController", "answer3value"]
@@ -1122,6 +1141,8 @@ depends-member:
 - ["CSo16UIViewController", "xx"]
 - ["CSo16UIViewController", ""]
 - ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt32", "init"]
+- !private ["Ps15UnsignedInteger", "init"]
 - ["C10HeadyQuiz214ViewController", "AnswerLabel"]
 - ["C10HeadyQuiz214ViewController", "AnswerNumber"]
 - !private ["C10HeadyQuiz214ViewController", "Bundle"]
@@ -1146,6 +1167,7 @@ depends-member:
 - ["C10HeadyQuiz214ViewController", "UIButton"]
 - !private ["C10HeadyQuiz214ViewController", "UIControlState"]
 - ["C10HeadyQuiz214ViewController", "UILabel"]
+- !private ["C10HeadyQuiz214ViewController", "UInt32"]
 - ["C10HeadyQuiz214ViewController", "answer1value"]
 - ["C10HeadyQuiz214ViewController", "answer2value"]
 - ["C10HeadyQuiz214ViewController", "answer3value"]
@@ -1183,6 +1205,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "insert"]
 - !private ["Ps24_DestructorSafeContainer", "remove"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
@@ -1217,6 +1240,7 @@ depends-member:
 - !private ["Ps9_Hashable", "Stride"]
 - ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "UIControlState"]
+- !private ["Ps9_Hashable", "UInt32"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "answer1value"]
@@ -1367,10 +1391,12 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - "Vs6UInt32"
+- !private "Ps15UnsignedInteger"
 - "C10HeadyQuiz214ViewController"
 - "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - "Ps24_DestructorSafeContainer"
+- !private "Ps28_DisallowMixedSignArithmetic"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - "Ps35_ExpressibleByBuiltinIntegerLiteral"

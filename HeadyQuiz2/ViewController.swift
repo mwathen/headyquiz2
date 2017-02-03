@@ -45,9 +45,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //var JSONQuestion2 = String()
-        
+                
         guard let path = Bundle.main.path(forResource: "Records", ofType: "plist") else {
             return
         }
@@ -101,7 +99,6 @@ class ViewController: UIViewController {
             Questions.insert(Question(Question: questionvalue,
                                       Answers: [answer1value,answer2value,answer3value,answer4value], Answer: correctanswer_real), at:xx)
             xx += 1
-            //print(xx)
         }
         
         PickQuestion()
@@ -115,7 +112,8 @@ class ViewController: UIViewController {
     func PickQuestion() {
 
         if Questions.count > 0 {
-            QNumber = 0
+            let QNumber3 = UInt32(Questions.count)
+            QNumber = Int(arc4random() % QNumber3)
             QNumber2 += 1
             
             self.QuestionLabel.text = Questions[QNumber].Question
