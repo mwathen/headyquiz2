@@ -172,6 +172,8 @@ SWIFT_CLASS("_TtC10HeadyQuiz214ViewController")
 @property (nonatomic) NSInteger AnswerNumber;
 @property (nonatomic, copy) NSString * _Nonnull CorrectAnswer;
 @property (nonatomic, copy) NSString * _Nonnull JSONQuestion;
+@property (nonatomic) NSInteger NumberRight;
+@property (nonatomic) NSInteger NumberWrong;
 @property (nonatomic) NSInteger xx;
 @property (nonatomic, copy) NSString * _Nonnull questionvalue;
 @property (nonatomic, copy) NSString * _Nonnull answer1value;

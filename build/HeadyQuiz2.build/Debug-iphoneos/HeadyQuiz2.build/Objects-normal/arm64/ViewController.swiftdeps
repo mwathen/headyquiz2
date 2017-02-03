@@ -9,53 +9,57 @@ provides-member:
 - ["V10HeadyQuiz28Question", ""]
 - ["C10HeadyQuiz214ViewController", ""]
 provides-dynamic-lookup:
-- "answer3value"
+- "xx"
 - "RandomQuestions"
 - "QuestionLabel"
 - "QNumber2"
-- "questionvalue"
-- "correctanswer_real"
-- "QNumber"
-- "CorrectAnswer"
-- "answer2value"
-- "Buttons"
+- "JSONQuestion"
 - "PickQuestion"
+- "Button3Action"
+- "answer2value"
+- "correctanswer_real"
+- "Buttons"
+- "didReceiveMemoryWarning"
+- "questionvalue"
+- "QNumber"
+- "Button1Action"
+- "NumberRight"
+- "answer3value"
 - "AnswerLabel"
 - "AnswerNumber"
-- "xx"
-- "didReceiveMemoryWarning"
+- "CorrectAnswer"
+- "NumberWrong"
+- "Button2Action"
+- "answer1value"
+- "viewDidLoad"
 - "answer4value"
 - "Button4Action"
-- "answer1value"
-- "Button1Action"
-- "viewDidLoad"
-- "Button2Action"
-- "JSONQuestion"
-- "Button3Action"
 depends-top-level:
-- "UIViewController"
-- "CastingPrecedence"
-- !private "NSDictionary"
-- !private "print"
-- !private "Bundle"
-- "UIButton"
-- "AssignmentPrecedence"
 - !private "=="
-- "ViewController"
-- "String"
+- !private "print"
 - !private "UInt32"
-- !private "NSLog"
-- "Int"
-- !private "Array"
-- !private "..<"
-- !private "arc4random"
-- !private "UIControlState"
-- !private "%"
+- "UIViewController"
 - !private "StringLiteralType"
+- !private "Array"
+- "UIButton"
+- "String"
+- "ViewController"
+- !private "NSLog"
+- !private "+"
+- !private "UIControlState"
+- !private "NSDictionary"
+- !private "arc4random"
+- "Question"
+- !private "Bundle"
+- !private "..<"
+- !private "%"
+- "Int"
 - !private ">"
 - !private "+="
+- "CastingPrecedence"
+- !private "ExtendedGraphemeClusterType"
+- "AssignmentPrecedence"
 - "UILabel"
-- "Question"
 depends-member:
 - ["Ps9AnyObject", "AnswerLabel"]
 - ["Ps9AnyObject", "AnswerNumber"]
@@ -70,6 +74,8 @@ depends-member:
 - ["Ps9AnyObject", "JSONQuestion"]
 - !private ["Ps9AnyObject", "NSDictionary"]
 - !private ["Ps9AnyObject", "NSLog"]
+- ["Ps9AnyObject", "NumberRight"]
+- ["Ps9AnyObject", "NumberWrong"]
 - ["Ps9AnyObject", "PickQuestion"]
 - ["Ps9AnyObject", "QNumber"]
 - ["Ps9AnyObject", "QNumber2"]
@@ -169,6 +175,8 @@ depends-member:
 - ["Ps7CVarArg", "JSONQuestion"]
 - !private ["Ps7CVarArg", "NSDictionary"]
 - !private ["Ps7CVarArg", "NSLog"]
+- ["Ps7CVarArg", "NumberRight"]
+- ["Ps7CVarArg", "NumberWrong"]
 - ["Ps7CVarArg", "PickQuestion"]
 - ["Ps7CVarArg", "QNumber"]
 - ["Ps7CVarArg", "QNumber2"]
@@ -241,6 +249,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "JSONQuestion"]
 - !private ["Ps28CustomDebugStringConvertible", "NSDictionary"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLog"]
+- ["Ps28CustomDebugStringConvertible", "NumberRight"]
+- ["Ps28CustomDebugStringConvertible", "NumberWrong"]
 - ["Ps28CustomDebugStringConvertible", "PickQuestion"]
 - ["Ps28CustomDebugStringConvertible", "QNumber"]
 - ["Ps28CustomDebugStringConvertible", "QNumber2"]
@@ -314,6 +324,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "JSONQuestion"]
 - !private ["Ps23CustomStringConvertible", "NSDictionary"]
 - !private ["Ps23CustomStringConvertible", "NSLog"]
+- ["Ps23CustomStringConvertible", "NumberRight"]
+- ["Ps23CustomStringConvertible", "NumberWrong"]
 - ["Ps23CustomStringConvertible", "PickQuestion"]
 - ["Ps23CustomStringConvertible", "QNumber"]
 - ["Ps23CustomStringConvertible", "QNumber2"]
@@ -379,6 +391,8 @@ depends-member:
 - ["Ps9Equatable", "JSONQuestion"]
 - !private ["Ps9Equatable", "NSDictionary"]
 - !private ["Ps9Equatable", "NSLog"]
+- ["Ps9Equatable", "NumberRight"]
+- ["Ps9Equatable", "NumberWrong"]
 - ["Ps9Equatable", "PickQuestion"]
 - ["Ps9Equatable", "QNumber"]
 - ["Ps9Equatable", "QNumber2"]
@@ -450,6 +464,8 @@ depends-member:
 - ["Ps8Hashable", "JSONQuestion"]
 - !private ["Ps8Hashable", "NSDictionary"]
 - !private ["Ps8Hashable", "NSLog"]
+- ["Ps8Hashable", "NumberRight"]
+- ["Ps8Hashable", "NumberWrong"]
 - ["Ps8Hashable", "PickQuestion"]
 - ["Ps8Hashable", "QNumber"]
 - ["Ps8Hashable", "QNumber2"]
@@ -563,6 +579,8 @@ depends-member:
 - ["PSo8NSCoding", "JSONQuestion"]
 - !private ["PSo8NSCoding", "NSDictionary"]
 - !private ["PSo8NSCoding", "NSLog"]
+- ["PSo8NSCoding", "NumberRight"]
+- ["PSo8NSCoding", "NumberWrong"]
 - ["PSo8NSCoding", "PickQuestion"]
 - ["PSo8NSCoding", "QNumber"]
 - ["PSo8NSCoding", "QNumber2"]
@@ -607,6 +625,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "JSONQuestion"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDictionary"]
 - !private ["PSo26NSExtensionRequestHandling", "NSLog"]
+- ["PSo26NSExtensionRequestHandling", "NumberRight"]
+- ["PSo26NSExtensionRequestHandling", "NumberWrong"]
 - ["PSo26NSExtensionRequestHandling", "PickQuestion"]
 - ["PSo26NSExtensionRequestHandling", "QNumber"]
 - ["PSo26NSExtensionRequestHandling", "QNumber2"]
@@ -649,6 +669,8 @@ depends-member:
 - ["CSo8NSObject", "JSONQuestion"]
 - !private ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSLog"]
+- ["CSo8NSObject", "NumberRight"]
+- ["CSo8NSObject", "NumberWrong"]
 - ["CSo8NSObject", "PickQuestion"]
 - ["CSo8NSObject", "QNumber"]
 - ["CSo8NSObject", "QNumber2"]
@@ -691,6 +713,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "JSONQuestion"]
 - !private ["PSo16NSObjectProtocol", "NSDictionary"]
 - !private ["PSo16NSObjectProtocol", "NSLog"]
+- ["PSo16NSObjectProtocol", "NumberRight"]
+- ["PSo16NSObjectProtocol", "NumberWrong"]
 - ["PSo16NSObjectProtocol", "PickQuestion"]
 - ["PSo16NSObjectProtocol", "QNumber"]
 - ["PSo16NSObjectProtocol", "QNumber2"]
@@ -837,6 +861,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "JSONQuestion"]
 - !private ["PSo21UIAppearanceContainer", "NSDictionary"]
 - !private ["PSo21UIAppearanceContainer", "NSLog"]
+- ["PSo21UIAppearanceContainer", "NumberRight"]
+- ["PSo21UIAppearanceContainer", "NumberWrong"]
 - ["PSo21UIAppearanceContainer", "PickQuestion"]
 - ["PSo21UIAppearanceContainer", "QNumber"]
 - ["PSo21UIAppearanceContainer", "QNumber2"]
@@ -876,6 +902,8 @@ depends-member:
 - ["PSo18UIContentContainer", "JSONQuestion"]
 - !private ["PSo18UIContentContainer", "NSDictionary"]
 - !private ["PSo18UIContentContainer", "NSLog"]
+- ["PSo18UIContentContainer", "NumberRight"]
+- ["PSo18UIContentContainer", "NumberWrong"]
 - ["PSo18UIContentContainer", "PickQuestion"]
 - ["PSo18UIContentContainer", "QNumber"]
 - ["PSo18UIContentContainer", "QNumber2"]
@@ -920,6 +948,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "JSONQuestion"]
 - !private ["PSo18UIFocusEnvironment", "NSDictionary"]
 - !private ["PSo18UIFocusEnvironment", "NSLog"]
+- ["PSo18UIFocusEnvironment", "NumberRight"]
+- ["PSo18UIFocusEnvironment", "NumberWrong"]
 - ["PSo18UIFocusEnvironment", "PickQuestion"]
 - ["PSo18UIFocusEnvironment", "QNumber"]
 - ["PSo18UIFocusEnvironment", "QNumber2"]
@@ -961,6 +991,8 @@ depends-member:
 - ["CSo11UIResponder", "JSONQuestion"]
 - !private ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSLog"]
+- ["CSo11UIResponder", "NumberRight"]
+- ["CSo11UIResponder", "NumberWrong"]
 - ["CSo11UIResponder", "PickQuestion"]
 - ["CSo11UIResponder", "QNumber"]
 - ["CSo11UIResponder", "QNumber2"]
@@ -1000,6 +1032,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "JSONQuestion"]
 - !private ["PSo30UIResponderStandardEditActions", "NSDictionary"]
 - !private ["PSo30UIResponderStandardEditActions", "NSLog"]
+- ["PSo30UIResponderStandardEditActions", "NumberRight"]
+- ["PSo30UIResponderStandardEditActions", "NumberWrong"]
 - ["PSo30UIResponderStandardEditActions", "PickQuestion"]
 - ["PSo30UIResponderStandardEditActions", "QNumber"]
 - ["PSo30UIResponderStandardEditActions", "QNumber2"]
@@ -1038,6 +1072,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "JSONQuestion"]
 - !private ["PSo16UIStateRestoring", "NSDictionary"]
 - !private ["PSo16UIStateRestoring", "NSLog"]
+- ["PSo16UIStateRestoring", "NumberRight"]
+- ["PSo16UIStateRestoring", "NumberWrong"]
 - ["PSo16UIStateRestoring", "PickQuestion"]
 - ["PSo16UIStateRestoring", "QNumber"]
 - ["PSo16UIStateRestoring", "QNumber2"]
@@ -1074,6 +1110,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "JSONQuestion"]
 - !private ["PSo18UITraitEnvironment", "NSDictionary"]
 - !private ["PSo18UITraitEnvironment", "NSLog"]
+- ["PSo18UITraitEnvironment", "NumberRight"]
+- ["PSo18UITraitEnvironment", "NumberWrong"]
 - ["PSo18UITraitEnvironment", "PickQuestion"]
 - ["PSo18UITraitEnvironment", "QNumber"]
 - ["PSo18UITraitEnvironment", "QNumber2"]
@@ -1114,6 +1152,8 @@ depends-member:
 - ["CSo16UIViewController", "JSONQuestion"]
 - !private ["CSo16UIViewController", "NSDictionary"]
 - !private ["CSo16UIViewController", "NSLog"]
+- ["CSo16UIViewController", "NumberRight"]
+- ["CSo16UIViewController", "NumberWrong"]
 - ["CSo16UIViewController", "PickQuestion"]
 - ["CSo16UIViewController", "QNumber"]
 - ["CSo16UIViewController", "QNumber2"]
@@ -1156,6 +1196,8 @@ depends-member:
 - ["C10HeadyQuiz214ViewController", "JSONQuestion"]
 - !private ["C10HeadyQuiz214ViewController", "NSDictionary"]
 - !private ["C10HeadyQuiz214ViewController", "NSLog"]
+- ["C10HeadyQuiz214ViewController", "NumberRight"]
+- ["C10HeadyQuiz214ViewController", "NumberWrong"]
 - ["C10HeadyQuiz214ViewController", "PickQuestion"]
 - ["C10HeadyQuiz214ViewController", "QNumber"]
 - ["C10HeadyQuiz214ViewController", "QNumber2"]
@@ -1230,6 +1272,8 @@ depends-member:
 - ["Ps9_Hashable", "JSONQuestion"]
 - !private ["Ps9_Hashable", "NSDictionary"]
 - !private ["Ps9_Hashable", "NSLog"]
+- ["Ps9_Hashable", "NumberRight"]
+- ["Ps9_Hashable", "NumberWrong"]
 - ["Ps9_Hashable", "PickQuestion"]
 - ["Ps9_Hashable", "QNumber"]
 - ["Ps9_Hashable", "QNumber2"]
@@ -1424,4 +1468,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "4c7634f8f67b3b80c057002072a34c2e"
+interface-hash: "ea1f67f592c10cd740ab09ea2e60b69f"

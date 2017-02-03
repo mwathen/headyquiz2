@@ -34,6 +34,10 @@ class ViewController: UIViewController {
     
     var JSONQuestion = String()
     
+    var NumberRight = 0
+    
+    var NumberWrong = 0
+    
     var xx = Int()
     
     var questionvalue = String()
@@ -77,19 +81,15 @@ class ViewController: UIViewController {
                 if (key2 == "Answer 1") {
                     //Questions[xx].Answers[0] = value2 as! String
                     answer1value = value2 as! String
-                    //print("\(key2) = \(value2)")
                 }
                 if (key2 == "Answer 2") {
                     answer2value = value2 as! String
-                    //print("\(key2) = \(value2)")
                 }
                 if (key2 == "Answer 3") {
                     answer3value = value2 as! String
-                    //print("\(key2) = \(value2)")
                 }
                 if (key2 == "Answer 4") {
                     answer4value = value2 as! String
-                    //print("\(key2) = \(value2)")
                 }
                 if (key2 == "Correct Answer") {
                     correctanswer_real = value2 as! Int
@@ -128,7 +128,12 @@ class ViewController: UIViewController {
             AnswerLabel.text = "";
         } else {
             NSLog("Done!")
-            AnswerLabel.text = "Quiz Completed";
+            var answer_label = "Quiz Completed\r\n"
+            let number_right_string = String(self.NumberRight)
+            let number_wrong_string = String(self.NumberWrong)
+            answer_label += "Number Right: " + number_right_string + "\r\n" as String
+            answer_label += "Number Wrong: " + number_wrong_string + "\r\n" as String
+            AnswerLabel.text = answer_label
         }
     }
     
@@ -141,15 +146,18 @@ class ViewController: UIViewController {
 
     @IBAction func Button1Action(_ sender: Any) {
         if AnswerNumber == 1 {
+            self.NumberRight += 1
             PickQuestion()
         } else {
             NSLog("Wrong!")
+            self.NumberWrong += 1
             AnswerLabel.text = "Wrong Answer"
         }
     }
 
     @IBAction func Button2Action(_ sender: Any) {
         if AnswerNumber == 2 {
+            self.NumberRight += 1
             PickQuestion()
         } else {
             NSLog("Wrong!")
@@ -159,18 +167,22 @@ class ViewController: UIViewController {
 
     @IBAction func Button3Action(_ sender: Any) {
         if AnswerNumber == 3 {
+            self.NumberRight += 1
             PickQuestion()
         } else {
             NSLog("Wrong!")
+            self.NumberWrong += 1
             AnswerLabel.text = "Wrong Answer"
         }
     }
 
     @IBAction func Button4Action(_ sender: Any) {
         if AnswerNumber == 4 {
+            self.NumberRight += 1
             PickQuestion()
         } else {
             NSLog("Wrong Again!")
+            self.NumberWrong += 1
             AnswerLabel.text = "Wrong Answer"
         }
     }
