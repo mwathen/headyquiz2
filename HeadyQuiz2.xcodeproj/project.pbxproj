@@ -14,6 +14,8 @@
 		BA6528E21E38308500133A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E01E38308500133A3D /* Main.storyboard */; };
 		BA6528E71E38308500133A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E61E38308500133A3D /* Assets.xcassets */; };
 		BA6528EA1E38308500133A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E81E38308500133A3D /* LaunchScreen.storyboard */; };
+		BA9BA49C1E44EB4700997731 /* 7413.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA49B1E44EB4700997731 /* 7413.jpg */; };
+		BA9BA4A01E46894800997731 /* sunglasses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA49F1E46894800997731 /* sunglasses.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BA6528E61E38308500133A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6528E91E38308500133A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6528EB1E38308500133A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9BA49B1E44EB4700997731 /* 7413.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7413.jpg; path = ../../test/7413.jpg; sourceTree = "<group>"; };
+		BA9BA49F1E46894800997731 /* sunglasses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sunglasses.jpg; path = ../../../../Downloads/sunglasses.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BA6528E01E38308500133A3D /* Main.storyboard */,
 				BA6528E61E38308500133A3D /* Assets.xcassets */,
 				BA6528E81E38308500133A3D /* LaunchScreen.storyboard */,
+				BA9BA49B1E44EB4700997731 /* 7413.jpg */,
+				BA9BA49F1E46894800997731 /* sunglasses.jpg */,
 				BA43943E1E3EE138007473B0 /* HeadyQuiz2.xcdatamodeld */,
 				BA6528EB1E38308500133A3D /* Info.plist */,
 				BA4394411E3EE5B4007473B0 /* Records.plist */,
@@ -131,7 +137,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6528EA1E38308500133A3D /* LaunchScreen.storyboard in Resources */,
+				BA9BA4A01E46894800997731 /* sunglasses.jpg in Resources */,
 				BA4394421E3EE5B4007473B0 /* Records.plist in Resources */,
+				BA9BA49C1E44EB4700997731 /* 7413.jpg in Resources */,
 				BA6528E71E38308500133A3D /* Assets.xcassets in Resources */,
 				BA6528E21E38308500133A3D /* Main.storyboard in Resources */,
 			);

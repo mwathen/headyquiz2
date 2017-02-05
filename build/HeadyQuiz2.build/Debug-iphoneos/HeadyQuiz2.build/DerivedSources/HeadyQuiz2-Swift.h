@@ -117,6 +117,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreData;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -168,6 +169,7 @@ SWIFT_CLASS("_TtC10HeadyQuiz214ViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified AnswerLabel;
 @property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified Buttons;
 @property (nonatomic) NSInteger QNumber;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified NextQuestion;
 @property (nonatomic) NSInteger QNumber2;
 @property (nonatomic) NSInteger AnswerNumber;
 @property (nonatomic, copy) NSString * _Nonnull CorrectAnswer;
@@ -183,8 +185,10 @@ SWIFT_CLASS("_TtC10HeadyQuiz214ViewController")
 @property (nonatomic) NSInteger correctanswer_real;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (CGRect)CGRectMake:(CGFloat)x :(CGFloat)y :(CGFloat)width :(CGFloat)height;
 - (void)PickQuestion;
 - (void)RandomQuestions;
+- (IBAction)NextQuestionAction:(id _Nonnull)sender;
 - (IBAction)Button1Action:(id _Nonnull)sender;
 - (IBAction)Button2Action:(id _Nonnull)sender;
 - (IBAction)Button3Action:(id _Nonnull)sender;

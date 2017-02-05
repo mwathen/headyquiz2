@@ -175,6 +175,22 @@
             <string>What was the name of the Phish run in 2017 that consisted of 13 shows straight at Madison Square Garden?
             </string>
         </dict>
+        <key>Record 12</key>
+        <dict>
+            <key>Answer 1</key>
+            <string>But Anyway</string>
+            <key>Answer 2</key>
+            <string>Run-Around</string>
+            <key>Answer 3</key>
+            <string>Most Precarious</string>
+            <key>Answer 4</key>
+            <string>The Mountains win Again</string>
+            <key>Correct Answer</key>
+            <integer>2</integer>
+            <key>Question</key>
+            <string>What was the Blues Traveler song from their 1994 album ‘Four’ that was a huge hit for them?
+            </string>
+        </dict>
 	</dict>
 </dict>
 </plist>
