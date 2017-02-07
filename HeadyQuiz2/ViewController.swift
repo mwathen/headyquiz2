@@ -8,6 +8,7 @@
 
 import UIKit
 import QuartzCore
+import Canvas
 
 struct Question {
     var Question : String
@@ -26,6 +27,8 @@ class ViewController: UIViewController {
     var Questions = [Question]()
     
     var QNumber = Int()
+    
+    @IBOutlet var ImageStore: CSAnimationView!
     
     @IBOutlet weak var NextQuestion: UIButton!
     
@@ -65,11 +68,12 @@ class ViewController: UIViewController {
         rect.layer.cornerRadius = 8.0
         rect.clipsToBounds = true
         rect.bounds = view.frame.insetBy(dx: 7.0, dy: 7.0)
-        self.view?.addSubview(rect)
-        self.view.bringSubview(toFront: rect)
+        //self.view?.addSubview(rect)
+        //self.view.bringSubview(toFront: rect)
         self.view.bringSubview(toFront: QuestionLabel)
         self.view.bringSubview(toFront: AnswerLabel)
         self.view.bringSubview(toFront: NextQuestion)
+        self.view.bringSubview(toFront: ImageStore)
         
         self.NextQuestion.alpha = 0
                 

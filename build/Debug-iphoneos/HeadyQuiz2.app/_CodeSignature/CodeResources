@@ -90,7 +90,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		nOVuDgTUtA2Gd+SrEH+PO+a6BB4=
+		txZmJAEQsMmAnribEnJoGdi34Ug=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,19 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		4191d9v2miGgVw2Z3nINaZm0M7k=
+		8CDqSXEY5B8L4A7pqj9qaqdSfiY=
+		</data>
+		<key>Frameworks/Canvas.framework/Canvas</key>
+		<data>
+		4AKFmaVhNXGBtZyaBa5TzBujk18=
+		</data>
+		<key>Frameworks/Canvas.framework/Info.plist</key>
+		<data>
+		DLkc8B0ZV8GNgu77JKYX4fJOa98=
+		</data>
+		<key>Frameworks/Canvas.framework/_CodeSignature/CodeResources</key>
+		<data>
+		cV10ReurLKSGQF2Zd92MKgopxM4=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -163,6 +175,10 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>Podfile</key>
+		<data>
+		dimMEDP1c2wQGt2oXLv20DZXNLU=
 		</data>
 		<key>Records.plist</key>
 		<data>
@@ -418,11 +434,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nOVuDgTUtA2Gd+SrEH+PO+a6BB4=
+			txZmJAEQsMmAnribEnJoGdi34Ug=
 			</data>
 			<key>hash2</key>
 			<data>
-			ECA/cP4F7n1YOqbH5eJncVxF9VKLYNVQY0ewjyc94bY=
+			ru/OIoEQuyf0gKMZAxLMAO2zgaKC+VpooWof4+8eJdk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -440,11 +456,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4191d9v2miGgVw2Z3nINaZm0M7k=
+			8CDqSXEY5B8L4A7pqj9qaqdSfiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4YXD3nhmxK8XELrfm4kKMfWaHddkKU/AHgU8lfTqyM8=
+			LYMiZTOmQSsLCNYQDv8MoLNG5aS/XE3eOFxSvxncz9Q=
+			</data>
+		</dict>
+		<key>Frameworks/Canvas.framework/Canvas</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4AKFmaVhNXGBtZyaBa5TzBujk18=
+			</data>
+			<key>hash2</key>
+			<data>
+			2BNqDwcXZHzKyjvfXPS9iPOoECGHnAP09Z09yGmo60c=
+			</data>
+		</dict>
+		<key>Frameworks/Canvas.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DLkc8B0ZV8GNgu77JKYX4fJOa98=
+			</data>
+			<key>hash2</key>
+			<data>
+			xQp9qtAy2lPr8g/ZaMFC4ccUnMhDKr0gILQ6vq199qA=
+			</data>
+		</dict>
+		<key>Frameworks/Canvas.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cV10ReurLKSGQF2Zd92MKgopxM4=
+			</data>
+			<key>hash2</key>
+			<data>
+			O2oOOLfSRky6dh2OLL1DORetHxeCJ2b6R5JZvjrDLSU=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -599,6 +648,17 @@
 			<key>hash2</key>
 			<data>
 			JmgPXy5CXBNqgBa3b7d3zg/ULj2PxfLI2ag9sLE35S0=
+			</data>
+		</dict>
+		<key>Podfile</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dimMEDP1c2wQGt2oXLv20DZXNLU=
+			</data>
+			<key>hash2</key>
+			<data>
+			fFxYKnaEiyevfVmNm7VUjk2yN8fz9QQpDDDpzpur1Xg=
 			</data>
 		</dict>
 		<key>Records.plist</key>

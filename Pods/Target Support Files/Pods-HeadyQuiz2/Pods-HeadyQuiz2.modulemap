@@ -1,0 +1,6 @@
+framework module Pods_HeadyQuiz2 {
+  umbrella header "Pods-HeadyQuiz2-umbrella.h"
+
+  export *
+  module * { export * }
+}

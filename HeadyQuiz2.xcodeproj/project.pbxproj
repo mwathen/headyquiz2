@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2AE2C5CF423908252583284 /* Pods_HeadyQuiz2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC94A0737BEC54A1B180EC5B /* Pods_HeadyQuiz2.framework */; };
 		BA4394401E3EE138007473B0 /* HeadyQuiz2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA43943E1E3EE138007473B0 /* HeadyQuiz2.xcdatamodeld */; };
 		BA4394421E3EE5B4007473B0 /* Records.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA4394411E3EE5B4007473B0 /* Records.plist */; };
 		BA6528DD1E38308500133A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6528DC1E38308500133A3D /* AppDelegate.swift */; };
@@ -16,9 +17,12 @@
 		BA6528EA1E38308500133A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E81E38308500133A3D /* LaunchScreen.storyboard */; };
 		BA9BA49C1E44EB4700997731 /* 7413.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA49B1E44EB4700997731 /* 7413.jpg */; };
 		BA9BA4A01E46894800997731 /* sunglasses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA49F1E46894800997731 /* sunglasses.jpg */; };
+		BA9BA4A41E4A408B00997731 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA4A31E4A408B00997731 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81C9180C9BF2969E142C02CA /* Pods-HeadyQuiz2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadyQuiz2.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeadyQuiz2/Pods-HeadyQuiz2.release.xcconfig"; sourceTree = "<group>"; };
+		90D20B5DE40555A94883FDBD /* Pods-HeadyQuiz2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadyQuiz2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeadyQuiz2/Pods-HeadyQuiz2.debug.xcconfig"; sourceTree = "<group>"; };
 		BA43943F1E3EE138007473B0 /* HeadyQuiz2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeadyQuiz2.xcdatamodel; sourceTree = "<group>"; };
 		BA4394411E3EE5B4007473B0 /* Records.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Records.plist; sourceTree = "<group>"; };
 		BA6528D91E38308500133A3D /* HeadyQuiz2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadyQuiz2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +34,8 @@
 		BA6528EB1E38308500133A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA9BA49B1E44EB4700997731 /* 7413.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7413.jpg; path = ../../test/7413.jpg; sourceTree = "<group>"; };
 		BA9BA49F1E46894800997731 /* sunglasses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sunglasses.jpg; path = ../../../../Downloads/sunglasses.jpg; sourceTree = "<group>"; };
+		BA9BA4A31E4A408B00997731 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		CC94A0737BEC54A1B180EC5B /* Pods_HeadyQuiz2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadyQuiz2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AE2C5CF423908252583284 /* Pods_HeadyQuiz2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1626C52E229E5DC0930C8CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC94A0737BEC54A1B180EC5B /* Pods_HeadyQuiz2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AEC66F099A179E296E91510 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90D20B5DE40555A94883FDBD /* Pods-HeadyQuiz2.debug.xcconfig */,
+				81C9180C9BF2969E142C02CA /* Pods-HeadyQuiz2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BA6528D01E38308400133A3D = {
 			isa = PBXGroup;
 			children = (
 				BA6528DB1E38308500133A3D /* HeadyQuiz2 */,
 				BA6528DA1E38308500133A3D /* Products */,
+				9AEC66F099A179E296E91510 /* Pods */,
+				1626C52E229E5DC0930C8CBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 		BA6528DB1E38308500133A3D /* HeadyQuiz2 */ = {
 			isa = PBXGroup;
 			children = (
+				BA9BA4A31E4A408B00997731 /* Podfile */,
 				BA6528DC1E38308500133A3D /* AppDelegate.swift */,
 				BA6528DE1E38308500133A3D /* ViewController.swift */,
 				BA6528E01E38308500133A3D /* Main.storyboard */,
@@ -83,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6528EE1E38308500133A3D /* Build configuration list for PBXNativeTarget "HeadyQuiz2" */;
 			buildPhases = (
+				44057EC1B978FCEC968BA59C /* [CP] Check Pods Manifest.lock */,
 				BA6528D51E38308400133A3D /* Sources */,
 				BA6528D61E38308400133A3D /* Frameworks */,
 				BA6528D71E38308400133A3D /* Resources */,
+				6EFB84EC2BEA5F075D50955F /* [CP] Embed Pods Frameworks */,
+				45EFDF3ECA01F522722BFAB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6528EA1E38308500133A3D /* LaunchScreen.storyboard in Resources */,
+				BA9BA4A41E4A408B00997731 /* Podfile in Resources */,
 				BA9BA4A01E46894800997731 /* sunglasses.jpg in Resources */,
 				BA4394421E3EE5B4007473B0 /* Records.plist in Resources */,
 				BA9BA49C1E44EB4700997731 /* 7413.jpg in Resources */,
@@ -146,6 +177,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44057EC1B978FCEC968BA59C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45EFDF3ECA01F522722BFAB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeadyQuiz2/Pods-HeadyQuiz2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EFB84EC2BEA5F075D50955F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeadyQuiz2/Pods-HeadyQuiz2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA6528D51E38308400133A3D /* Sources */ = {
@@ -275,6 +354,7 @@
 		};
 		BA6528EF1E38308500133A3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D20B5DE40555A94883FDBD /* Pods-HeadyQuiz2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6P97WW4QGA;
@@ -288,6 +368,7 @@
 		};
 		BA6528F01E38308500133A3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C9180C9BF2969E142C02CA /* Pods-HeadyQuiz2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6P97WW4QGA;

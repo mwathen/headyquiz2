@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6FEA460734E5C97692E8AA6FFFB97CA69E93757A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1197DFF9C81DE9A697EEDC5D71999348665DA9AB" : 9223372036854775807,
+    "6FEA460734E5C97692E8AA6FFFB97CA69E93757A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0B142197-214E-41D1-AF8E-8B56DC417EBD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1197DFF9C81DE9A697EEDC5D71999348665DA9AB" : "test\/",
+    "6FEA460734E5C97692E8AA6FFFB97CA69E93757A" : "HeadyQuiz2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HeadyQuiz2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HeadyQuiz2.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/mwathen\/headyquiz1_0.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1197DFF9C81DE9A697EEDC5D71999348665DA9AB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mwathen\/headyquiz2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FEA460734E5C97692E8AA6FFFB97CA69E93757A"
+    }
+  ]
+}

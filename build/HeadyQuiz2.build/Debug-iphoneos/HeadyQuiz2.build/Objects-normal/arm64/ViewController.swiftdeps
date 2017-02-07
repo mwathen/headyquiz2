@@ -9,67 +9,69 @@ provides-member:
 - ["V10HeadyQuiz28Question", ""]
 - ["C10HeadyQuiz214ViewController", ""]
 provides-dynamic-lookup:
+- "AnswerLabel"
+- "NextQuestion"
+- "NumberWrong"
+- "CorrectAnswer"
+- "answer3value"
+- "RandomQuestions"
+- "Button2Action"
+- "QNumber"
+- "answer4value"
+- "QuestionLabel"
+- "Buttons"
+- "QNumber2"
+- "answer1value"
+- "PickQuestion"
+- "viewDidLoad"
+- "JSONQuestion"
+- "answer2value"
 - "CGRectMake"
 - "NextQuestionAction"
-- "answer3value"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "Buttons"
-- "CorrectAnswer"
-- "Button4Action"
-- "NumberWrong"
-- "QNumber"
-- "answer1value"
-- "answer4value"
-- "Button1Action"
-- "AnswerLabel"
-- "QNumber2"
-- "Button3Action"
-- "JSONQuestion"
+- "ImageStore"
 - "xx"
-- "Button2Action"
-- "answer2value"
-- "PickQuestion"
+- "Button1Action"
 - "AnswerNumber"
-- "RandomQuestions"
-- "NextQuestion"
-- "QuestionLabel"
+- "questionvalue"
+- "Button4Action"
 - "correctanswer_real"
 - "NumberRight"
-- "questionvalue"
+- "Button3Action"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIViewController"
-- !private "arc4random"
-- !private "ExtendedGraphemeClusterType"
-- !private "+="
-- "UIButton"
-- !private "BooleanLiteralType"
-- !private "UIControlState"
-- "String"
-- !private "UIImageView"
-- !private ">"
-- !private "%"
-- !private "NSDictionary"
-- !private "..<"
-- "ViewController"
-- !private "StringLiteralType"
-- !private "+"
-- !private "print"
-- !private "NSLog"
-- !private "Bundle"
+- !private "UInt32"
+- "CastingPrecedence"
 - "AssignmentPrecedence"
 - !private "=="
-- "Int"
-- !private "Array"
-- "CastingPrecedence"
-- !private "UInt32"
-- "Question"
-- !private "UIColor"
-- "CGRect"
 - "UILabel"
-- !private "UIView"
+- !private "NSLog"
 - "CGFloat"
+- !private ">"
+- !private "UIImageView"
+- !private "Array"
+- !private "..<"
+- "UIViewController"
+- !private "UIControlState"
+- !private "arc4random"
+- "UIButton"
+- !private "+"
+- "String"
 - !private "UIImage"
+- !private "print"
+- !private "%"
+- !private "NSDictionary"
+- !private "BooleanLiteralType"
+- !private "+="
+- !private "Bundle"
+- "ViewController"
+- !private "StringLiteralType"
+- !private "UIColor"
+- "CSAnimationView"
+- !private "UIView"
+- "Int"
+- "Question"
+- "CGRect"
+- !private "ExtendedGraphemeClusterType"
 depends-member:
 - ["Ps9AnyObject", "AnswerLabel"]
 - ["Ps9AnyObject", "AnswerNumber"]
@@ -82,6 +84,7 @@ depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - ["Ps9AnyObject", "CGRectMake"]
 - ["Ps9AnyObject", "CorrectAnswer"]
+- ["Ps9AnyObject", "ImageStore"]
 - ["Ps9AnyObject", "Int"]
 - ["Ps9AnyObject", "JSONQuestion"]
 - !private ["Ps9AnyObject", "NSDictionary"]
@@ -236,6 +239,7 @@ depends-member:
 - ["Ps7CVarArg", "CGRectMake"]
 - ["Ps7CVarArg", "CorrectAnswer"]
 - !private ["Ps7CVarArg", "Element"]
+- ["Ps7CVarArg", "ImageStore"]
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "IndexDistance"]
 - ["Ps7CVarArg", "Int"]
@@ -340,6 +344,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "CGRectMake"]
 - ["Ps28CustomDebugStringConvertible", "CorrectAnswer"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
+- ["Ps28CustomDebugStringConvertible", "ImageStore"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - ["Ps28CustomDebugStringConvertible", "Int"]
@@ -446,6 +451,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "CGRectMake"]
 - ["Ps23CustomStringConvertible", "CorrectAnswer"]
 - !private ["Ps23CustomStringConvertible", "Element"]
+- ["Ps23CustomStringConvertible", "ImageStore"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - ["Ps23CustomStringConvertible", "Int"]
@@ -544,6 +550,7 @@ depends-member:
 - !private ["Ps9Equatable", "CGRect"]
 - ["Ps9Equatable", "CGRectMake"]
 - ["Ps9Equatable", "CorrectAnswer"]
+- ["Ps9Equatable", "ImageStore"]
 - ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Iterator"]
@@ -648,6 +655,7 @@ depends-member:
 - !private ["Ps8Hashable", "CGRect"]
 - ["Ps8Hashable", "CGRectMake"]
 - ["Ps8Hashable", "CorrectAnswer"]
+- ["Ps8Hashable", "ImageStore"]
 - ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - ["Ps8Hashable", "JSONQuestion"]
@@ -793,6 +801,7 @@ depends-member:
 - !private ["PSo8NSCoding", "CGRect"]
 - ["PSo8NSCoding", "CGRectMake"]
 - ["PSo8NSCoding", "CorrectAnswer"]
+- ["PSo8NSCoding", "ImageStore"]
 - ["PSo8NSCoding", "Int"]
 - ["PSo8NSCoding", "JSONQuestion"]
 - !private ["PSo8NSCoding", "NSDictionary"]
@@ -870,6 +879,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - ["PSo26NSExtensionRequestHandling", "CorrectAnswer"]
+- ["PSo26NSExtensionRequestHandling", "ImageStore"]
 - ["PSo26NSExtensionRequestHandling", "Int"]
 - ["PSo26NSExtensionRequestHandling", "JSONQuestion"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDictionary"]
@@ -923,7 +933,9 @@ depends-member:
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "CGRectMake"]
+- ["CSo8NSObject", "CSAnimationView"]
 - ["CSo8NSObject", "CorrectAnswer"]
+- ["CSo8NSObject", "ImageStore"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "JSONQuestion"]
 - !private ["CSo8NSObject", "NSDictionary"]
@@ -997,6 +1009,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - ["PSo16NSObjectProtocol", "CGRectMake"]
 - ["PSo16NSObjectProtocol", "CorrectAnswer"]
+- ["PSo16NSObjectProtocol", "ImageStore"]
 - ["PSo16NSObjectProtocol", "Int"]
 - ["PSo16NSObjectProtocol", "JSONQuestion"]
 - !private ["PSo16NSObjectProtocol", "NSDictionary"]
@@ -1208,6 +1221,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - ["PSo21UIAppearanceContainer", "CGRectMake"]
 - ["PSo21UIAppearanceContainer", "CorrectAnswer"]
+- ["PSo21UIAppearanceContainer", "ImageStore"]
 - ["PSo21UIAppearanceContainer", "Int"]
 - ["PSo21UIAppearanceContainer", "JSONQuestion"]
 - !private ["PSo21UIAppearanceContainer", "NSDictionary"]
@@ -1280,6 +1294,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGRect"]
 - ["PSo18UIContentContainer", "CGRectMake"]
 - ["PSo18UIContentContainer", "CorrectAnswer"]
+- ["PSo18UIContentContainer", "ImageStore"]
 - ["PSo18UIContentContainer", "Int"]
 - ["PSo18UIContentContainer", "JSONQuestion"]
 - !private ["PSo18UIContentContainer", "NSDictionary"]
@@ -1373,6 +1388,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - ["PSo18UIFocusEnvironment", "CGRectMake"]
 - ["PSo18UIFocusEnvironment", "CorrectAnswer"]
+- ["PSo18UIFocusEnvironment", "ImageStore"]
 - ["PSo18UIFocusEnvironment", "Int"]
 - ["PSo18UIFocusEnvironment", "JSONQuestion"]
 - !private ["PSo18UIFocusEnvironment", "NSDictionary"]
@@ -1464,7 +1480,9 @@ depends-member:
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "CGRectMake"]
+- ["CSo11UIResponder", "CSAnimationView"]
 - ["CSo11UIResponder", "CorrectAnswer"]
+- ["CSo11UIResponder", "ImageStore"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "JSONQuestion"]
 - !private ["CSo11UIResponder", "NSDictionary"]
@@ -1530,6 +1548,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - ["PSo30UIResponderStandardEditActions", "CGRectMake"]
 - ["PSo30UIResponderStandardEditActions", "CorrectAnswer"]
+- ["PSo30UIResponderStandardEditActions", "ImageStore"]
 - ["PSo30UIResponderStandardEditActions", "Int"]
 - ["PSo30UIResponderStandardEditActions", "JSONQuestion"]
 - !private ["PSo30UIResponderStandardEditActions", "NSDictionary"]
@@ -1594,6 +1613,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - ["PSo16UIStateRestoring", "CGRectMake"]
 - ["PSo16UIStateRestoring", "CorrectAnswer"]
+- ["PSo16UIStateRestoring", "ImageStore"]
 - ["PSo16UIStateRestoring", "Int"]
 - ["PSo16UIStateRestoring", "JSONQuestion"]
 - !private ["PSo16UIStateRestoring", "NSDictionary"]
@@ -1641,6 +1661,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - ["PSo18UITraitEnvironment", "CGRectMake"]
 - ["PSo18UITraitEnvironment", "CorrectAnswer"]
+- ["PSo18UITraitEnvironment", "ImageStore"]
 - ["PSo18UITraitEnvironment", "Int"]
 - ["PSo18UITraitEnvironment", "JSONQuestion"]
 - !private ["PSo18UITraitEnvironment", "NSDictionary"]
@@ -1724,7 +1745,9 @@ depends-member:
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CGRect"]
 - ["CSo16UIViewController", "CGRectMake"]
+- ["CSo16UIViewController", "CSAnimationView"]
 - ["CSo16UIViewController", "CorrectAnswer"]
+- ["CSo16UIViewController", "ImageStore"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "JSONQuestion"]
 - !private ["CSo16UIViewController", "NSDictionary"]
@@ -1778,7 +1801,9 @@ depends-member:
 - ["C10HeadyQuiz214ViewController", "CGFloat"]
 - ["C10HeadyQuiz214ViewController", "CGRect"]
 - ["C10HeadyQuiz214ViewController", "CGRectMake"]
+- ["C10HeadyQuiz214ViewController", "CSAnimationView"]
 - ["C10HeadyQuiz214ViewController", "CorrectAnswer"]
+- ["C10HeadyQuiz214ViewController", "ImageStore"]
 - ["C10HeadyQuiz214ViewController", "Int"]
 - ["C10HeadyQuiz214ViewController", "JSONQuestion"]
 - !private ["C10HeadyQuiz214ViewController", "NSDictionary"]
@@ -1883,6 +1908,7 @@ depends-member:
 - !private ["Ps9_Hashable", "CGRect"]
 - ["Ps9_Hashable", "CGRectMake"]
 - ["Ps9_Hashable", "CorrectAnswer"]
+- ["Ps9_Hashable", "ImageStore"]
 - ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - ["Ps9_Hashable", "JSONQuestion"]
@@ -2121,5 +2147,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UITextField+PlaceholderColor.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UITextView+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UITextField+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UINavigationBar+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UILabel+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UIButton+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/CSNavigationController.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/CSBlurView.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/CSAnimation.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/CSAnimationView.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/Canvas.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/Canvas-umbrella.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "6bbc46b1495a38b5ce4c13ba2126dc06"
+interface-hash: "b44b62f77672a0651fbb0683a930e779"

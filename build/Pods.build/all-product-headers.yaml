@@ -1,0 +1,115 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CSAnimation.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/CSAnimation.h"
+        },
+        {
+          'type': 'file',
+          'name': "CSAnimationView.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/CSAnimationView.h"
+        },
+        {
+          'type': 'file',
+          'name': "CSBlurView.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/CSBlurView.h"
+        },
+        {
+          'type': 'file',
+          'name': "CSNavigationController.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/CSNavigationController.h"
+        },
+        {
+          'type': 'file',
+          'name': "Canvas-Swift.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/Canvas-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Canvas-umbrella.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Target Support Files/Canvas/Canvas-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Canvas.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/Canvas.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+TCCustomFont.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/UIButton+TCCustomFont.h"
+        },
+        {
+          'type': 'file',
+          'name': "UILabel+TCCustomFont.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/UILabel+TCCustomFont.h"
+        },
+        {
+          'type': 'file',
+          'name': "UINavigationBar+TCCustomFont.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/UINavigationBar+TCCustomFont.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITextField+PlaceholderColor.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/UITextField+PlaceholderColor.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITextField+TCCustomFont.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/UITextField+TCCustomFont.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITextView+TCCustomFont.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Canvas/CanvasLibrary/UITextView+TCCustomFont.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Pods.build/Debug-iphoneos/Canvas.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Pods_HeadyQuiz2.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-HeadyQuiz2-umbrella.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/Pods/Target Support Files/Pods-HeadyQuiz2/Pods-HeadyQuiz2-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_HeadyQuiz2-Swift.h",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Pods_HeadyQuiz2.framework/Headers/Pods_HeadyQuiz2-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Pods_HeadyQuiz2.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Pods.build/Debug-iphoneos/Pods-HeadyQuiz2.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -160,6 +160,7 @@ SWIFT_CLASS_NAMED("Records")
 
 @class UILabel;
 @class UIButton;
+@class CSAnimationView;
 @class NSBundle;
 @class NSCoder;
 
@@ -169,6 +170,7 @@ SWIFT_CLASS("_TtC10HeadyQuiz214ViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified AnswerLabel;
 @property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified Buttons;
 @property (nonatomic) NSInteger QNumber;
+@property (nonatomic, strong) IBOutlet CSAnimationView * _Null_unspecified ImageStore;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified NextQuestion;
 @property (nonatomic) NSInteger QNumber2;
 @property (nonatomic) NSInteger AnswerNumber;

@@ -11,17 +11,17 @@ provides-member:
 - ["C10HeadyQuiz27Records", "correctanswer"]
 - ["C10HeadyQuiz27Records", "question"]
 provides-dynamic-lookup:
-- "correctanswer"
 - "answer3"
 - "answer1"
-- "question"
 - "answer4"
+- "question"
 - "answer2"
+- "correctanswer"
 depends-top-level:
-- "String"
 - "Records"
-- !private "StringLiteralType"
 - "NSFetchRequest"
+- !private "StringLiteralType"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "NSFetchRequest"]
 - ["Ps9AnyObject", "answer1"]
