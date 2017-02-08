@@ -15,9 +15,11 @@
 		BA6528E21E38308500133A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E01E38308500133A3D /* Main.storyboard */; };
 		BA6528E71E38308500133A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E61E38308500133A3D /* Assets.xcassets */; };
 		BA6528EA1E38308500133A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6528E81E38308500133A3D /* LaunchScreen.storyboard */; };
+		BA67D73E1E4B65AB0057098D /* caseyjones_short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA67D73D1E4B65AB0057098D /* caseyjones_short.mp3 */; };
 		BA9BA49C1E44EB4700997731 /* 7413.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA49B1E44EB4700997731 /* 7413.jpg */; };
 		BA9BA4A01E46894800997731 /* sunglasses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA49F1E46894800997731 /* sunglasses.jpg */; };
 		BA9BA4A41E4A408B00997731 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA4A31E4A408B00997731 /* Podfile */; };
+		BA9BA4AB1E4AA2F000997731 /* BellBottom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9BA4AA1E4AA2F000997731 /* BellBottom.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +34,11 @@
 		BA6528E61E38308500133A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6528E91E38308500133A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6528EB1E38308500133A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA67D73D1E4B65AB0057098D /* caseyjones_short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = caseyjones_short.mp3; path = ../../caseyjones_short.mp3; sourceTree = "<group>"; };
 		BA9BA49B1E44EB4700997731 /* 7413.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7413.jpg; path = ../../test/7413.jpg; sourceTree = "<group>"; };
 		BA9BA49F1E46894800997731 /* sunglasses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sunglasses.jpg; path = ../../../../Downloads/sunglasses.jpg; sourceTree = "<group>"; };
-		BA9BA4A31E4A408B00997731 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		BA9BA4A31E4A408B00997731 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA9BA4AA1E4AA2F000997731 /* BellBottom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BellBottom.ttf; path = ../../BellBottom.ttf; sourceTree = "<group>"; };
 		CC94A0737BEC54A1B180EC5B /* Pods_HeadyQuiz2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadyQuiz2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,8 @@
 		BA6528DB1E38308500133A3D /* HeadyQuiz2 */ = {
 			isa = PBXGroup;
 			children = (
+				BA67D73D1E4B65AB0057098D /* caseyjones_short.mp3 */,
+				BA9BA4A51E4AA22300997731 /* Fonts */,
 				BA9BA4A31E4A408B00997731 /* Podfile */,
 				BA6528DC1E38308500133A3D /* AppDelegate.swift */,
 				BA6528DE1E38308500133A3D /* ViewController.swift */,
@@ -101,6 +107,14 @@
 				BA4394411E3EE5B4007473B0 /* Records.plist */,
 			);
 			path = HeadyQuiz2;
+			sourceTree = "<group>";
+		};
+		BA9BA4A51E4AA22300997731 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BA9BA4AA1E4AA2F000997731 /* BellBottom.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,8 @@
 				BA4394421E3EE5B4007473B0 /* Records.plist in Resources */,
 				BA9BA49C1E44EB4700997731 /* 7413.jpg in Resources */,
 				BA6528E71E38308500133A3D /* Assets.xcassets in Resources */,
+				BA9BA4AB1E4AA2F000997731 /* BellBottom.ttf in Resources */,
+				BA67D73E1E4B65AB0057098D /* caseyjones_short.mp3 in Resources */,
 				BA6528E21E38308500133A3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

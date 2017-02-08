@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glQ-Yi-lI1">
-                                <rect key="frame" x="71" y="240" width="220" height="28"/>
+                                <rect key="frame" x="71" y="240" width="220" height="30"/>
                                 <color key="backgroundColor" red="0.1660650612" green="0.044033208810000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Button">
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzN-zC-GE2">
-                                <rect key="frame" x="71" y="297" width="220" height="29"/>
+                                <rect key="frame" x="71" y="297" width="220" height="30"/>
                                 <color key="backgroundColor" red="0.1660650612" green="0.044033208810000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Button">
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0Z-J2-HWU">
-                                <rect key="frame" x="71" y="137" width="220" height="28"/>
+                                <rect key="frame" x="71" y="137" width="220" height="30"/>
                                 <color key="backgroundColor" red="0.1660650612" green="0.044033208810000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Button">
@@ -90,12 +90,41 @@
                                     <action selector="Button2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2D-qD-4ot"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMp-zb-P3w">
+                                <rect key="frame" x="105" y="421" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1660650612" green="0.044033208810000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start Quiz">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartQuizAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TMy-xm-8gt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heady Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOj-22-cXL">
+                                <rect key="frame" x="32" y="28" width="302" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.63926977039999999" green="0.024747855030000002" blue="0.015561360289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-vU-ZrQ">
+                                <rect key="frame" x="105" y="533" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1660650612" green="0.044033208810000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Facebook Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="FBLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x3a-I8-AeG"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXR-Hh-vJY" customClass="CSAnimationView">
-                                <rect key="frame" x="67" y="519" width="240" height="128"/>
+                                <rect key="frame" x="63" y="173" width="240" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7413.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VT3-Ff-rbE">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <rect key="frame" x="-8" y="0.0" width="255" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -132,9 +161,12 @@
                     </view>
                     <connections>
                         <outlet property="AnswerLabel" destination="fRQ-it-NKk" id="Pa7-PB-gOI"/>
+                        <outlet property="FBLogin" destination="GPm-vU-ZrQ" id="g5N-Aq-g4T"/>
+                        <outlet property="HeadyQuizTitle" destination="mOj-22-cXL" id="xgw-Li-AjT"/>
                         <outlet property="ImageStore" destination="BXR-Hh-vJY" id="mre-cR-Dr9"/>
                         <outlet property="NextQuestion" destination="u69-Y6-Szk" id="Cru-mv-dJ7"/>
                         <outlet property="QuestionLabel" destination="dQU-Sd-LAn" id="lfO-Xg-LJ2"/>
+                        <outlet property="StartQuiz" destination="wMp-zb-P3w" id="rgm-Ba-Wtt"/>
                         <outletCollection property="Buttons" destination="t0Z-J2-HWU" collectionClass="NSMutableArray" id="h8l-pW-hst"/>
                         <outletCollection property="Buttons" destination="xKC-jC-les" collectionClass="NSMutableArray" id="Q2W-Vc-OrH"/>
                         <outletCollection property="Buttons" destination="glQ-Yi-lI1" collectionClass="NSMutableArray" id="fRl-jP-6u8"/>

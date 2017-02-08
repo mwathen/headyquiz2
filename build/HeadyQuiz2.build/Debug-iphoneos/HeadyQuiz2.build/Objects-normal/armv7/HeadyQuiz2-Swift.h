@@ -160,7 +160,7 @@ SWIFT_CLASS_NAMED("Records")
 
 @class UILabel;
 @class UIButton;
-@class UIImageView;
+@class CSAnimationView;
 @class NSBundle;
 @class NSCoder;
 
@@ -169,9 +169,11 @@ SWIFT_CLASS("_TtC10HeadyQuiz214ViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified QuestionLabel;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified AnswerLabel;
 @property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified Buttons;
-@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified LowerImage;
 @property (nonatomic) NSInteger QNumber;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified NextQuestion;
+@property (nonatomic, strong) IBOutlet CSAnimationView * _Null_unspecified ImageStore;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified NextQuestion;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified HeadyQuizTitle;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified StartQuiz;
 @property (nonatomic) NSInteger QNumber2;
 @property (nonatomic) NSInteger AnswerNumber;
 @property (nonatomic, copy) NSString * _Nonnull CorrectAnswer;
@@ -179,6 +181,9 @@ SWIFT_CLASS("_TtC10HeadyQuiz214ViewController")
 @property (nonatomic) NSInteger NumberRight;
 @property (nonatomic) NSInteger NumberWrong;
 @property (nonatomic) NSInteger xx;
+@property (nonatomic, readonly) double defaultDuration;
+@property (nonatomic, readonly) double defaultDamping;
+@property (nonatomic, readonly) double defaultVelocity;
 @property (nonatomic, copy) NSString * _Nonnull questionvalue;
 @property (nonatomic, copy) NSString * _Nonnull answer1value;
 @property (nonatomic, copy) NSString * _Nonnull answer2value;
@@ -188,13 +193,16 @@ SWIFT_CLASS("_TtC10HeadyQuiz214ViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (CGRect)CGRectMake:(CGFloat)x :(CGFloat)y :(CGFloat)width :(CGFloat)height;
+- (void)FirstQuestion;
 - (void)PickQuestion;
 - (void)RandomQuestions;
+- (void)animateButton;
 - (IBAction)NextQuestionAction:(id _Nonnull)sender;
 - (IBAction)Button1Action:(id _Nonnull)sender;
 - (IBAction)Button2Action:(id _Nonnull)sender;
 - (IBAction)Button3Action:(id _Nonnull)sender;
 - (IBAction)Button4Action:(id _Nonnull)sender;
+- (IBAction)StartQuizAction:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

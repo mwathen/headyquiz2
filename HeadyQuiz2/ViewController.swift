@@ -9,6 +9,9 @@
 import UIKit
 import QuartzCore
 import Canvas
+import AVFoundation
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 struct Question {
     var Question : String
@@ -30,7 +33,16 @@ class ViewController: UIViewController {
     
     @IBOutlet var ImageStore: CSAnimationView!
     
-    @IBOutlet weak var NextQuestion: UIButton!
+    @IBOutlet var NextQuestion: UIButton!
+    
+    @IBOutlet var HeadyQuizTitle: UILabel!
+    
+    
+    @IBOutlet var StartQuiz: UIButton!
+    
+    
+    @IBOutlet var FBLogin: UIButton!
+    
     
     var QNumber2 = -1
     
@@ -45,6 +57,12 @@ class ViewController: UIViewController {
     var NumberWrong = 0
     
     var xx = Int()
+    
+    var player: AVAudioPlayer?
+    
+    let defaultDuration = 5.0
+    let defaultDamping = 0.50
+    let defaultVelocity = 4.0
     
     var questionvalue = String()
     var answer1value = String()
@@ -74,9 +92,16 @@ class ViewController: UIViewController {
         self.view.bringSubview(toFront: AnswerLabel)
         self.view.bringSubview(toFront: NextQuestion)
         self.view.bringSubview(toFront: ImageStore)
-        
-        self.NextQuestion.alpha = 0
                 
+        self.NextQuestion.alpha = 0
+        self.QuestionLabel.alpha = 0
+        self.AnswerLabel.alpha = 0
+        for i in 0..<Buttons.count {
+            Buttons[i].alpha = 0
+        }
+        
+        self.HeadyQuizTitle.font = UIFont(name: "BellBottom", size: 60)
+        
         guard let path = Bundle.main.path(forResource: "Records", ofType: "plist") else {
             return
         }
@@ -90,8 +115,6 @@ class ViewController: UIViewController {
         guard let dic2 = dic.object(forKey:"Records") as? [String: Any]  else {
             return
         }
-        
-        //print(dic)
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -131,7 +154,9 @@ class ViewController: UIViewController {
             xx += 1
         }
         
-        PickQuestion()
+        //PickQuestion()
+        animateButton()
+        playSound()
     }
 
     override func didReceiveMemoryWarning() {
@@ -141,6 +166,31 @@ class ViewController: UIViewController {
     
     func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
         return CGRect(x: x, y: y, width: width, height: height)
+    }
+    
+    func playSound() {
+        let url = Bundle.main.url(forResource: "caseyjones_short", withExtension: "mp3")!
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func FirstQuestion() {
+        //self.NextQuestion.alpha = 1
+        self.QuestionLabel.alpha = 1
+        self.AnswerLabel.alpha = 1
+        for i in 0..<Buttons.count {
+            Buttons[i].alpha = 1
+        }
+        self.HeadyQuizTitle.alpha = 0
+        PickQuestion()
     }
     
     func PickQuestion() {
@@ -180,6 +230,42 @@ class ViewController: UIViewController {
         var RandomNumber = arc4random() % 5
         RandomNumber += 1
         
+    }
+    
+    // ⬇︎⬇︎⬇︎ animation happens here ⬇︎⬇︎⬇︎
+    func animateButton() {
+        //AudioServicesPlaySystemSound(bubbleSound)
+        self.StartQuiz.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        
+        UIView.animate(withDuration: self.defaultDuration,
+                       delay: 0,
+                       usingSpringWithDamping: CGFloat(self.defaultDamping),
+                       initialSpringVelocity: CGFloat(self.defaultVelocity),
+                       options: .allowUserInteraction,
+                       animations: {
+                        self.StartQuiz.transform = .identity
+        },
+                       completion: { finished in
+                        self.animateButton()
+        }
+        )
+    }
+    
+    @IBAction func FBLoginAction(_ sender: Any) {
+        //NSLog("FB!")
+        let facebookLogin = FBSDKLoginManager()
+        print("Logging In")
+        
+        facebookLogin.logIn(withReadPermissions: ["email"], from: self, handler:{(facebookResult, facebookError) -> Void in
+         if facebookError != nil {
+            NSLog("Facebook login failed.Error  (facebookError)")
+         } else if (facebookResult?.isCancelled)! {
+            NSLog("Facebook login was cancelled.")
+         } else {
+            NSLog("Login Successful")
+            self.FBLogin.alpha = 0
+         }
+      });
     }
     
     @IBAction func NextQuestionAction(_ sender: Any) {
@@ -255,7 +341,20 @@ class ViewController: UIViewController {
             AnswerLabel.text = "Wrong Answer"
         }
     }
+    
+    
+    
+    @IBAction func StartQuizAction(_ sender: Any) {
+        FirstQuestion()
+        StartQuiz.alpha = 0
+        self.FBLogin.alpha = 0
+        ImageStore.isHidden = true
+    }
 
 
+
+
+    
+    
 }
 

@@ -6,31 +6,38 @@ provides-nominal:
 provides-member:
 - ["C10HeadyQuiz211AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "applicationWillTerminate"
+- "applicationWillResignActive"
 - "persistentContainer"
 - "window"
+- "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
 - "application"
-- "applicationDidEnterBackground"
-- "applicationWillResignActive"
+- "application"
+- "applicationDidBecomeActive"
+- "applicationWillTerminate"
 - "saveContext"
 depends-top-level:
-- !private "fatalError"
-- "UIWindow"
-- "UIApplicationDelegate"
-- "CastingPrecedence"
-- "AppDelegate"
-- "Bool"
+- "String"
+- !private "FBSDKAppEvents"
 - "NSPersistentContainer"
-- !private "BooleanLiteralType"
-- "UIApplication"
-- "UIApplicationLaunchOptionsKey"
-- !private "StringLiteralType"
 - "UIResponder"
+- "Bool"
+- "URL"
+- "UIWindow"
+- "CastingPrecedence"
+- "UIApplicationDelegate"
+- "UIApplication"
 - !private "NSError"
+- !private "fatalError"
+- !private "StringLiteralType"
+- "UIApplicationLaunchOptionsKey"
+- !private "FBSDKApplicationDelegate"
+- "AppDelegate"
 depends-member:
+- !private ["Ps9AnyObject", "FBSDKAppEvents"]
+- !private ["Ps9AnyObject", "FBSDKApplicationDelegate"]
 - !private ["Ps9AnyObject", "NSPersistentContainer"]
+- !private ["Ps9AnyObject", "activateApp"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -51,16 +58,21 @@ depends-member:
 - ["Ps9AnyObject", "persistentContainer.storage"]
 - !private ["Ps9AnyObject", "save"]
 - ["Ps9AnyObject", "saveContext"]
+- !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "userInfo"]
 - !private ["Ps9AnyObject", "viewContext"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C10HeadyQuiz211AppDelegate", "Bool"]
+- !private ["C10HeadyQuiz211AppDelegate", "FBSDKAppEvents"]
+- !private ["C10HeadyQuiz211AppDelegate", "FBSDKApplicationDelegate"]
 - !private ["C10HeadyQuiz211AppDelegate", "NSError"]
 - ["C10HeadyQuiz211AppDelegate", "NSPersistentContainer"]
+- ["C10HeadyQuiz211AppDelegate", "String"]
 - ["C10HeadyQuiz211AppDelegate", "UIApplication"]
 - ["C10HeadyQuiz211AppDelegate", "UIApplicationLaunchOptionsKey"]
 - ["C10HeadyQuiz211AppDelegate", "UIWindow"]
+- ["C10HeadyQuiz211AppDelegate", "URL"]
 - ["C10HeadyQuiz211AppDelegate", "application"]
 - ["C10HeadyQuiz211AppDelegate", "applicationDidBecomeActive"]
 - ["C10HeadyQuiz211AppDelegate", "applicationDidEnterBackground"]
@@ -82,7 +94,10 @@ depends-member:
 - ["C10HeadyQuiz211AppDelegate", "window"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "FBSDKAppEvents"]
+- !private ["Ps7CVarArg", "FBSDKApplicationDelegate"]
 - !private ["Ps7CVarArg", "NSPersistentContainer"]
+- !private ["Ps7CVarArg", "activateApp"]
 - ["Ps7CVarArg", "application"]
 - ["Ps7CVarArg", "applicationDidBecomeActive"]
 - ["Ps7CVarArg", "applicationDidEnterBackground"]
@@ -103,13 +118,17 @@ depends-member:
 - ["Ps7CVarArg", "persistentContainer.storage"]
 - !private ["Ps7CVarArg", "save"]
 - ["Ps7CVarArg", "saveContext"]
+- !private ["Ps7CVarArg", "sharedInstance"]
 - !private ["Ps7CVarArg", "userInfo"]
 - !private ["Ps7CVarArg", "viewContext"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKAppEvents"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKApplicationDelegate"]
 - !private ["Ps28CustomDebugStringConvertible", "NSPersistentContainer"]
+- !private ["Ps28CustomDebugStringConvertible", "activateApp"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -130,6 +149,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "persistentContainer.storage"]
 - !private ["Ps28CustomDebugStringConvertible", "save"]
 - ["Ps28CustomDebugStringConvertible", "saveContext"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedInstance"]
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
 - !private ["Ps28CustomDebugStringConvertible", "viewContext"]
 - ["Ps28CustomDebugStringConvertible", "window"]
@@ -138,8 +158,11 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "FBSDKAppEvents"]
+- !private ["Ps23CustomStringConvertible", "FBSDKApplicationDelegate"]
 - !private ["Ps23CustomStringConvertible", "NSPersistentContainer"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "activateApp"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -160,14 +183,18 @@ depends-member:
 - ["Ps23CustomStringConvertible", "persistentContainer.storage"]
 - !private ["Ps23CustomStringConvertible", "save"]
 - ["Ps23CustomStringConvertible", "saveContext"]
+- !private ["Ps23CustomStringConvertible", "sharedInstance"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
 - !private ["Ps23CustomStringConvertible", "viewContext"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Vs10Dictionary", "deinit"]
 - !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "FBSDKAppEvents"]
+- !private ["Ps9Equatable", "FBSDKApplicationDelegate"]
 - !private ["Ps9Equatable", "NSPersistentContainer"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "activateApp"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -188,6 +215,7 @@ depends-member:
 - ["Ps9Equatable", "persistentContainer.storage"]
 - !private ["Ps9Equatable", "save"]
 - ["Ps9Equatable", "saveContext"]
+- !private ["Ps9Equatable", "sharedInstance"]
 - !private ["Ps9Equatable", "userInfo"]
 - !private ["Ps9Equatable", "viewContext"]
 - ["Ps9Equatable", "window"]
@@ -199,9 +227,15 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo14FBSDKAppEvents", "activateApp"]
+- !private ["CSo24FBSDKApplicationDelegate", "application"]
+- !private ["CSo24FBSDKApplicationDelegate", "sharedInstance"]
 - !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "FBSDKAppEvents"]
+- !private ["Ps8Hashable", "FBSDKApplicationDelegate"]
 - !private ["Ps8Hashable", "NSPersistentContainer"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "activateApp"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -222,10 +256,12 @@ depends-member:
 - ["Ps8Hashable", "persistentContainer.storage"]
 - !private ["Ps8Hashable", "save"]
 - ["Ps8Hashable", "saveContext"]
+- !private ["Ps8Hashable", "sharedInstance"]
 - !private ["Ps8Hashable", "userInfo"]
 - !private ["Ps8Hashable", "viewContext"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
@@ -249,11 +285,16 @@ depends-member:
 - !private ["CSo22NSManagedObjectContext", "save"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "FBSDKAppEvents"]
+- !private ["CSo8NSObject", "FBSDKApplicationDelegate"]
 - !private ["CSo8NSObject", "NSError"]
 - ["CSo8NSObject", "NSPersistentContainer"]
+- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
 - ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "activateApp"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -274,10 +315,14 @@ depends-member:
 - ["CSo8NSObject", "persistentContainer.storage"]
 - !private ["CSo8NSObject", "save"]
 - ["CSo8NSObject", "saveContext"]
+- !private ["CSo8NSObject", "sharedInstance"]
 - !private ["CSo8NSObject", "userInfo"]
 - !private ["CSo8NSObject", "viewContext"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "FBSDKAppEvents"]
+- !private ["PSo16NSObjectProtocol", "FBSDKApplicationDelegate"]
 - !private ["PSo16NSObjectProtocol", "NSPersistentContainer"]
+- !private ["PSo16NSObjectProtocol", "activateApp"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -298,6 +343,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "persistentContainer.storage"]
 - !private ["PSo16NSObjectProtocol", "save"]
 - ["PSo16NSObjectProtocol", "saveContext"]
+- !private ["PSo16NSObjectProtocol", "sharedInstance"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
 - !private ["PSo16NSObjectProtocol", "viewContext"]
 - ["PSo16NSObjectProtocol", "window"]
@@ -317,6 +363,9 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- ["CSo13UIApplication", "deinit"]
+- !private ["PSo21UIApplicationDelegate", "FBSDKAppEvents"]
+- !private ["PSo21UIApplicationDelegate", "FBSDKApplicationDelegate"]
 - !private ["PSo21UIApplicationDelegate", "NSPersistentContainer"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
@@ -336,11 +385,15 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "FBSDKAppEvents"]
+- !private ["CSo11UIResponder", "FBSDKApplicationDelegate"]
 - !private ["CSo11UIResponder", "NSError"]
 - ["CSo11UIResponder", "NSPersistentContainer"]
+- ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
 - ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "URL"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
 - ["CSo11UIResponder", "applicationDidEnterBackground"]
@@ -361,6 +414,8 @@ depends-member:
 - ["CSo11UIResponder", "saveContext"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKAppEvents"]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKApplicationDelegate"]
 - !private ["PSo30UIResponderStandardEditActions", "NSPersistentContainer"]
 - ["PSo30UIResponderStandardEditActions", "application"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
@@ -386,6 +441,7 @@ depends-member:
 - !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
+- ["V10Foundation3URL", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
@@ -393,8 +449,11 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "FBSDKAppEvents"]
+- !private ["Ps9_Hashable", "FBSDKApplicationDelegate"]
 - !private ["Ps9_Hashable", "NSPersistentContainer"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "activateApp"]
 - ["Ps9_Hashable", "application"]
 - ["Ps9_Hashable", "applicationDidBecomeActive"]
 - ["Ps9_Hashable", "applicationDidEnterBackground"]
@@ -415,6 +474,7 @@ depends-member:
 - ["Ps9_Hashable", "persistentContainer.storage"]
 - !private ["Ps9_Hashable", "save"]
 - ["Ps9_Hashable", "saveContext"]
+- !private ["Ps9_Hashable", "sharedInstance"]
 - !private ["Ps9_Hashable", "userInfo"]
 - !private ["Ps9_Hashable", "viewContext"]
 - ["Ps9_Hashable", "window"]
@@ -441,8 +501,11 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "CSo14FBSDKAppEvents"
+- !private "CSo24FBSDKApplicationDelegate"
 - !private "Sf"
 - "Ps8Hashable"
+- "SQ"
 - !private "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
@@ -467,6 +530,7 @@ depends-nominal:
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
+- "CSo13UIApplication"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -475,6 +539,7 @@ depends-nominal:
 - !private "Vs6UInt32"
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
+- "V10Foundation3URL"
 - !private "Sc"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
@@ -496,5 +561,71 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UITextField+PlaceholderColor.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UITextView+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UITextField+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UINavigationBar+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UILabel+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/UIButton+TCCustomFont.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/CSNavigationController.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/CSBlurView.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/CSAnimation.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/CSAnimationView.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/Canvas.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Headers/Canvas-umbrella.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Canvas/Canvas.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/mikewath/Documents/XCodeProjects/HeadyQuiz2/build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "27f906eebeb1fa43836f949556d0accd"
+interface-hash: "6579c9d6799f9fc6eaca2a1d67a2a661"
