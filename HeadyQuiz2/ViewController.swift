@@ -101,6 +101,18 @@ class ViewController: UIViewController {
             Buttons[i].alpha = 0
         }
         
+        self.NextQuestion.layer.cornerRadius = 5
+        self.NextQuestion.layer.borderWidth = 1
+        self.NextQuestion.layer.borderColor = UIColor.white.cgColor
+        
+        self.StartQuiz.layer.cornerRadius = 5
+        self.StartQuiz.layer.borderWidth = 1
+        self.StartQuiz.layer.borderColor = UIColor.white.cgColor
+        
+        self.FBLogin.layer.cornerRadius = 5
+        self.FBLogin.layer.borderWidth = 1
+        self.FBLogin.layer.borderColor = UIColor.white.cgColor
+
         self.HeadyQuizTitle.font = UIFont(name: "BellBottom", size: 60)
         
         guard let path = Bundle.main.path(forResource: "Records", ofType: "plist") else {
@@ -310,7 +322,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func NextQuestionAction(_ sender: Any) {
-        NSLog("Next!")
         for i in 0..<Buttons.count {
             Buttons[i].isEnabled = true
             Buttons[i].alpha = 100
@@ -322,9 +333,14 @@ class ViewController: UIViewController {
     @IBAction func Button1Action(_ sender: Any) {
         if AnswerNumber == 1 {
             self.NumberRight += 1
-            PickQuestion()
+            //PickQuestion()
+            for i in 0..<Buttons.count {
+                Buttons[i].isEnabled = false
+                Buttons[i].alpha = 0.5
+            }
+            AnswerLabel.text = "Correct"
+            self.NextQuestion.alpha = 100
         } else {
-            NSLog("Wrong!")
             self.NextQuestion.alpha = 100
             self.NumberWrong += 1
             for i in 0..<Buttons.count {
@@ -338,9 +354,14 @@ class ViewController: UIViewController {
     @IBAction func Button2Action(_ sender: Any) {
         if AnswerNumber == 2 {
             self.NumberRight += 1
-            PickQuestion()
+            //PickQuestion()
+            for i in 0..<Buttons.count {
+                Buttons[i].isEnabled = false
+                Buttons[i].alpha = 0.5
+            }
+            AnswerLabel.text = "Correct"
+            self.NextQuestion.alpha = 100
         } else {
-            NSLog("Wrong!")
             self.NextQuestion.alpha = 100
             self.NumberWrong += 1
             for i in 0..<Buttons.count {
@@ -354,9 +375,14 @@ class ViewController: UIViewController {
     @IBAction func Button3Action(_ sender: Any) {
         if AnswerNumber == 3 {
             self.NumberRight += 1
-            PickQuestion()
+            //PickQuestion()
+            for i in 0..<Buttons.count {
+                Buttons[i].isEnabled = false
+                Buttons[i].alpha = 0.5
+            }
+            AnswerLabel.text = "Correct"
+            self.NextQuestion.alpha = 100
         } else {
-            NSLog("Wrong!")
             self.NextQuestion.alpha = 100
             self.NumberWrong += 1
             for i in 0..<Buttons.count {
@@ -370,9 +396,14 @@ class ViewController: UIViewController {
     @IBAction func Button4Action(_ sender: Any) {
         if AnswerNumber == 4 {
             self.NumberRight += 1
-            PickQuestion()
+            //PickQuestion()
+            for i in 0..<Buttons.count {
+                Buttons[i].isEnabled = false
+                Buttons[i].alpha = 0.5
+            }
+            AnswerLabel.text = "Correct"
+            self.NextQuestion.alpha = 100
         } else {
-            NSLog("Wrong Again!")
             self.NextQuestion.alpha = 100
             self.NumberWrong += 1
             for i in 0..<Buttons.count {
@@ -393,9 +424,5 @@ class ViewController: UIViewController {
     }
 
 
-
-
-    
-    
 }
 
