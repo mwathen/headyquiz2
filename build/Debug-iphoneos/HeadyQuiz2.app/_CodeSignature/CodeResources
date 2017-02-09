@@ -90,7 +90,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		1JF1jhqdVEywRxBdj0RBl35L7Gg=
+		HV9pOhyRPw/ISsyPu92R9b/RuME=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		qelMyen+TctMJXKul5fXrU3lSGI=
+		wA1HG+j2fZAiYPyyC1fvqypx8zk=
 		</data>
 		<key>BellBottom.ttf</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Frameworks/Bolts.framework/Bolts</key>
 		<data>
-		a27kic2qvD6F33snjEHk25l4uSQ=
+		E+dP+6Y5tb61UG1ChOt1+tORpCM=
 		</data>
 		<key>Frameworks/Bolts.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/Canvas.framework/Canvas</key>
 		<data>
-		y46Fn3NRMNkf+TFdJwXd8a6iKYU=
+		vmZBFjRthOZgCdOR7jKDfmlfV4w=
 		</data>
 		<key>Frameworks/Canvas.framework/Info.plist</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/FBSDKCoreKit</key>
 		<data>
-		zQtZFLz3vkr3dvd4Hpeih8VhOGw=
+		CV7qpXkOe09HDBblwlFDzO2u38g=
 		</data>
 		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/af.lproj/FacebookSDK.strings</key>
 		<dict>
@@ -538,7 +538,7 @@
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/FBSDKLoginKit</key>
 		<data>
-		zkXxtit1emMymC/Zfv5SjNFmhz4=
+		9aa9h9yU7vdBWIowHRjkb3iNj1U=
 		</data>
 		<key>Frameworks/FBSDKLoginKit.framework/Info.plist</key>
 		<data>
@@ -550,7 +550,7 @@
 		</data>
 		<key>Frameworks/FBSDKShareKit.framework/FBSDKShareKit</key>
 		<data>
-		iBEFOoDGnZS7bfFv2oxhjt5Yekw=
+		sg2z8G3fb8jvi4fgaooB//gaDMQ=
 		</data>
 		<key>Frameworks/FBSDKShareKit.framework/Info.plist</key>
 		<data>
@@ -898,11 +898,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1JF1jhqdVEywRxBdj0RBl35L7Gg=
+			HV9pOhyRPw/ISsyPu92R9b/RuME=
 			</data>
 			<key>hash2</key>
 			<data>
-			pBWI1I/ZO1z2eAo6yIJ1rSp5pEM+wt/ktUWPNlzZmVE=
+			7geC56nriOrCd7f0N3UY+jsw3k23DG+A27xzYZUc618=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -920,11 +920,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qelMyen+TctMJXKul5fXrU3lSGI=
+			wA1HG+j2fZAiYPyyC1fvqypx8zk=
 			</data>
 			<key>hash2</key>
 			<data>
-			qOPMO1cEYoav/YyYjsHBn1Uxai104kC/6Npyr4Dsy4o=
+			peC5HvlDAxR2BGpyNLgjE417lKvvSeCPmpQ58lPrkas=
 			</data>
 		</dict>
 		<key>BellBottom.ttf</key>
@@ -942,11 +942,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a27kic2qvD6F33snjEHk25l4uSQ=
+			E+dP+6Y5tb61UG1ChOt1+tORpCM=
 			</data>
 			<key>hash2</key>
 			<data>
-			6qQEd7VMPp8QvQDUVTj1vMgczRpIA6ynpE8YoP6/Eic=
+			n+0CW3xJQnQSj3ybyh4Y2dkrZWCx4jmjwgV/prJSyu8=
 			</data>
 		</dict>
 		<key>Frameworks/Bolts.framework/Info.plist</key>
@@ -975,11 +975,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y46Fn3NRMNkf+TFdJwXd8a6iKYU=
+			vmZBFjRthOZgCdOR7jKDfmlfV4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			rDJWZ/prbieFde+eapMIqkbbuX3K6JMaKAWgf38kjC4=
+			qxF/fGIYooLShX56in292NdV5dyk1s9PA8/YDteFPS4=
 			</data>
 		</dict>
 		<key>Frameworks/Canvas.framework/Info.plist</key>
@@ -1008,11 +1008,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zQtZFLz3vkr3dvd4Hpeih8VhOGw=
+			CV7qpXkOe09HDBblwlFDzO2u38g=
 			</data>
 			<key>hash2</key>
 			<data>
-			PWBh/9PSo7j8KSGyZ0hD8H2SvFkwZpxGXRqobyVYVn8=
+			yFujWbUDeaKclwvgnGKIttnipdgU/TFx5QM7F/xK7v0=
 			</data>
 		</dict>
 		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/af.lproj/FacebookSDK.strings</key>
@@ -1613,11 +1613,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zkXxtit1emMymC/Zfv5SjNFmhz4=
+			9aa9h9yU7vdBWIowHRjkb3iNj1U=
 			</data>
 			<key>hash2</key>
 			<data>
-			G+4eZ53GxCMXy7wLjsSp4om4DIAq/IczHtXNUZdfjwI=
+			4Jw7y3efJM+Zu/KWJhE3PqOFfPzJi0Oj++fbsDGrdxw=
 			</data>
 		</dict>
 		<key>Frameworks/FBSDKLoginKit.framework/Info.plist</key>
@@ -1646,11 +1646,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iBEFOoDGnZS7bfFv2oxhjt5Yekw=
+			sg2z8G3fb8jvi4fgaooB//gaDMQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			EAzOeZ5oGpDcVC3tBheqnSsB9qwIiQ01rg+Hyo5mfx4=
+			LNpcqoNmku8bAmd9amRL0Al0HLvXHBKDU+evg7JJMWI=
 			</data>
 		</dict>
 		<key>Frameworks/FBSDKShareKit.framework/Info.plist</key>

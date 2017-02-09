@@ -198,6 +198,7 @@ SWIFT_CLASS("_TtC10HeadyQuiz214ViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (CGRect)CGRectMake:(CGFloat)x :(CGFloat)y :(CGFloat)width :(CGFloat)height;
+- (void)getSetlist;
 - (void)playSound;
 - (void)FirstQuestion;
 - (void)PickQuestion;

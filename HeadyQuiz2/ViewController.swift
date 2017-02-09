@@ -12,6 +12,7 @@ import Canvas
 import AVFoundation
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Foundation
 
 struct Question {
     var Question : String
@@ -157,6 +158,7 @@ class ViewController: UIViewController {
         //PickQuestion()
         animateButton()
         playSound()
+        //getSetlist()
     }
 
     override func didReceiveMemoryWarning() {
@@ -166,6 +168,42 @@ class ViewController: UIViewController {
     
     func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
         return CGRect(x: x, y: y, width: width, height: height)
+    }
+    
+    func getSetlist() {
+        var venues = [String]()
+        let postData = NSData(data: "".data(using: String.Encoding.utf8)!)
+        
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.phish.net/v3/setlists/get?apikey=DD0BA58CBF42F65762B4&showdate=2009-08-08")! as URL,
+                                          cachePolicy: .useProtocolCachePolicy,
+                                          timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        request.httpBody = postData as Data
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                NSLog(error as! String)
+            } else {
+                testthis: do {
+                        let json = try JSONSerialization.jsonObject(with: data!) as? [String: Any]
+                        let response2 = json?["response"] as? [String: Any]
+                        let data2 = response2?["data"] as? [[String: Any]]
+                        for show_properties in data2! {
+                            if let name = show_properties["venue"] as? String {
+                                venues.append(name)
+                                break testthis
+                            }
+                        }
+                } catch {
+                    print("error in JSONSerialization")
+                }
+                print(venues)
+            }
+        })
+        
+        dataTask.resume()
+        
     }
     
     func playSound() {
@@ -209,6 +247,9 @@ class ViewController: UIViewController {
                 Buttons[i].titleLabel?.numberOfLines = 1
                 Buttons[i].titleLabel?.minimumScaleFactor = 0.5
                 Buttons[i].titleLabel?.adjustsFontSizeToFitWidth = true
+                Buttons[i].layer.cornerRadius = 5
+                Buttons[i].layer.borderWidth = 1
+                Buttons[i].layer.borderColor = UIColor.white.cgColor
                 self.view.bringSubview(toFront: Buttons[i])
             }
             
